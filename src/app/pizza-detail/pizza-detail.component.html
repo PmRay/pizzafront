@@ -1,0 +1,16 @@
+<div class="row" *ngIf="pizza">
+  <div class="col">
+    <img [src]="pizza.url" alt="">
+  </div>
+</div>
+<div class="row" *ngIf="pizza">
+  <div class="col">
+    <h1>{{pizza.name}}</h1>
+  </div>
+</div>
+<div class="row" *ngIf="pizza">
+  <div class="col">
+    <p>{{pizza.price}}</p>
+    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+  </div>
+</div>
